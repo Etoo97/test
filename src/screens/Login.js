@@ -6,6 +6,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import PhoneInput from 'react-native-phone-number-input';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import Logo from '../../assets/Logo.svg'
 
 
 const Login = ({ navigation }) => {
@@ -40,9 +41,9 @@ const Login = ({ navigation }) => {
 
       <View>
 
-
-        <Image source={require('../../assets/Khazyn.png')} style={styles.image} />
-
+        {/* 
+        <Image source={require('../../assets/Khazyn.png')} */}
+        <Logo style={styles.image} />
         <View>
           <View style={styles.searchSection}>
             <PhoneInput
@@ -59,8 +60,8 @@ const Login = ({ navigation }) => {
           </TouchableOpacity>
         </View>
 
-        <View style={{marginTop:24}}>
-          <View style={{ flexDirection: 'row', alignSelf: 'center',marginBottom:10 }}>
+        <View style={{ marginTop: 24 }}>
+          <View style={{ flexDirection: 'row', alignSelf: 'center', marginBottom: 10 }}>
             <Text style={styles.textbody2}>If You don’t have accont</Text>
           </View>
 
@@ -126,8 +127,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: "100%",
-    paddingTop:14,
-    paddingBottom:14,
+    paddingTop: 14,
+    paddingBottom: 14,
     alignSelf: 'center',
     borderRadius: 16,
 
@@ -147,8 +148,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: "100%",
-    paddingTop:14,
-    paddingBottom:14,
+    paddingTop: 14,
+    paddingBottom: 14,
     alignSelf: 'center',
     borderRadius: 16,
     shadowColor: "#000",
@@ -162,7 +163,7 @@ const styles = StyleSheet.create({
 
   },
   searchSection: {
-    marginBottom:16
+    marginBottom: 16
 
   },
   log2: {

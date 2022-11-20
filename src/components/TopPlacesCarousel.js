@@ -10,6 +10,7 @@ import {
 import { colors, shadow, sizes, spacing } from '../constants/theme';
 import FavoriteButton from './FavoriteButton';
 import LinearGradient from 'react-native-linear-gradient';
+import KH from '../../assets/KH.svg'
 
 const CARD_WIDTH = sizes.width - 20;
 const CARD_HEIGHT = 160;
@@ -48,7 +49,7 @@ const TopPlacesCarousel = ({ list }) => {
               <View style={styles.titleBox1}>
                 <Text style={styles.title1}>49% <Text style={{ fontSize: 10 }}>off</Text></Text>
               </View>
-              <Image source={require('../../assets/Logo.png')} style={{ position: 'absolute', left: 15, top: 15, width: 35, height: 17, zIndex: 2 }} />
+              <KH style={{ position: 'absolute', left: 15, top: 15, width: 35, height: 17, zIndex: 2 }} />
               <View style={styles.titleBox}>
                 <Text style={styles.title}>{item.title}</Text>
                 <Text style={styles.location}>{item.location} <Text style={{ fontFamily: 'Lato-Bold', color: '#FF193B', fontSize: sizes.h2, }}>49%</Text></Text>

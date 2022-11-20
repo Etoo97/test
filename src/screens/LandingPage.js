@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { Card } from 'react-native-shadow-cards';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import Splash from '../../assets/Splash.svg'
 
 export default class LandingPage extends Component {
   render = () => {
@@ -16,7 +17,8 @@ export default class LandingPage extends Component {
         </TouchableOpacity>
 
         <View style={{ paddingLeft:16,paddingRight:16}}>
-          <Image source={require('../../assets/Land.png')} style={styles.image} />
+          {/* <Image source={require('../../assets/Land.png')} style={styles.image} /> */}
+          <Splash style={styles.image} />
 
           <View style={{ alignSelf: 'center', marginTop: 24 }}>
               <Text style={styles.textbody}>Khazyn Dummy Title App</Text>
