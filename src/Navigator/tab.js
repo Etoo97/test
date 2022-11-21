@@ -7,17 +7,24 @@ import CartScreenStack from './CartScreenStack';
 import MenuScreenStack from './MenuScreenStack';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import Categories1 from '../../assets/Categories1.svg';
+import Home from '../../assets/Home.svg';
+import Deal1 from '../../assets/Deal1';
+import Cart from '../../assets/Cart.svg';
+import Menu from '../../assets/Menu.svg'
 
 
 const Tab = createBottomTabNavigator();
 
 
 const Tabs = () => {
+    
     return (
 
         <Tab.Navigator
             tabBarOptions={{
                 showLabel: false,
+
             }}
             screenOptions={{
                 headerShown: false,
@@ -34,15 +41,7 @@ const Tabs = () => {
                 tabBarIcon: ({ focused }) => (
                     <View style={{ alignItems: 'center', justifyContent: 'center', }}
                     >
-                        < Image
-                            source={require('../../assets/Home.png')}
-                            resizeMode='contain'
-                            style={{
-                                width: 18,
-                                height: 18,
-
-
-                            }} />
+                        <Home />
                         <Text style={styles.texttab}>Home</Text>
                     </View>
                 ),
@@ -53,15 +52,7 @@ const Tabs = () => {
                 tabBarIcon: ({ focused }) => (
                     <View style={{ alignItems: 'center', justifyContent: 'center', }}
                     >
-                        < Image
-                            source={require('../../assets/Categories.png')}
-                            resizeMode='contain'
-                            style={{
-                                width: 18,
-                                height: 18,
-
-
-                            }} />
+                        <Categories1 />
                         <Text style={styles.texttab}>Categories</Text>
                     </View>
                 ),
@@ -72,15 +63,7 @@ const Tabs = () => {
                 tabBarIcon: ({ focused }) => (
                     <View style={{ alignItems: 'center', justifyContent: 'center', }}
                     >
-                        < Image
-                            source={require('../../assets/Deals.png')}
-                            resizeMode='contain'
-                            style={{
-                                width: 18,
-                                height: 18,
-
-
-                            }} />
+                        <Deal1 />
                         <Text style={styles.texttab}>Deals</Text>
                     </View>
                 ),
@@ -91,15 +74,7 @@ const Tabs = () => {
                 tabBarIcon: ({ focused }) => (
                     <View style={{ alignItems: 'center', justifyContent: 'center', }}
                     >
-                        < Image
-                            source={require('../../assets/Cart.png')}
-                            resizeMode='contain'
-                            style={{
-                                width: 18,
-                                height: 18,
-
-
-                            }} />
+                        <Cart />
                         <Text style={styles.texttab}>Cart</Text>
                     </View>
                 ),
@@ -110,15 +85,7 @@ const Tabs = () => {
                 tabBarIcon: ({ focused }) => (
                     <View style={{ alignItems: 'center', justifyContent: 'center', }}
                     >
-                        < Image
-                            source={require('../../assets/Menu.png')}
-                            resizeMode='contain'
-                            style={{
-                                width: 18,
-                                height: 18,
-
-
-                            }} />
+                        <Menu />
                         <Text style={styles.texttab}>Menu</Text>
                     </View>
                 ),

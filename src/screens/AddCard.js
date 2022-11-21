@@ -7,7 +7,7 @@ import Body from '../components/Body'
 import MainCenter8 from '../components/MainCenter8'
 import TripsList2 from '../components/TripsList2'
 import MainCenter9 from '../components/MainCenter9'
-import TripsList1 from '../components/TripsList1'
+import TripsList17 from '../components/TripsList17'
 import TripsList15 from '../components/TripsList15'
 
 const AddCard = () => {
@@ -23,7 +23,7 @@ const AddCard = () => {
                 <MainCenter8 />
                 <TripsList15 />
                 <MainCenter9 />
-                <TripsList1 />
+                <TripsList17 />
             
             </ScrollView>
 

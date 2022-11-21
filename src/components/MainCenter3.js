@@ -2,13 +2,16 @@ import React from 'react';
 import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import Order from '../../assets/Order.svg';
 
 const MainCenter = ({ }) => {
   return (
     <>
       <View style={styles.container}>
         <View style={styles.headerLeft}>
-          <Image source={require('../../assets/order.png')} />
+          {/* <Image source={require('../../assets/order.png')} /> */}
+          <Order />
+
           <Text style={styles.title1}>Shop By Top{"\n"}<Text style={styles.title2}>Daily Orders</Text></Text>
         </View>
         <View >

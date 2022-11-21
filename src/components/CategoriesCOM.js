@@ -5,6 +5,7 @@ import { Card } from 'react-native-shadow-cards';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import {useNavigation} from '@react-navigation/native';
+import Categories from '../../assets/Categories.svg';
 
 const CategoriesCOM = () => {
   const navigation = useNavigation();
@@ -12,7 +13,8 @@ const CategoriesCOM = () => {
     <ScrollView style={{ backgroundColor: '#FFFFFF' }}>
       <View style={styles.container}>
         <View style={styles.headerLeft}>
-          <Image source={require('../../assets/Categories1.png')} />
+          {/* <Image source={require('../../assets/Categories1.png')} /> */}
+          <Categories /> 
           <Text style={styles.title1}>Shop By Top{"\n"}<Text style={styles.title2}>Categories</Text></Text>
         </View>
       </View>

@@ -3,13 +3,14 @@ import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import {useNavigation} from '@react-navigation/native';
+import Moto from '../../assets/Moto.svg';
 const MainHeader = ({ }) => {
   const navigation = useNavigation();
   return (
     <>
       <View style={styles.container}>
         <View style={styles.headerLeft}>
-          <Image source={require('../../assets/drive.png')} />
+          <Moto />
           <Text style={styles.title1}>Delivering to<Text style={styles.title2}> New Nozha{"\n"}<Ionicons name='location' size={15} color='#100A1F' /> <Text style={styles.title3}>(Nozha Apartment)</Text> <SimpleLineIcons name='arrow-down' size={12} color='#B9B8BE' /></Text></Text>
         </View>
         <View style={{ flexDirection: 'row', marginTop: 14}}>

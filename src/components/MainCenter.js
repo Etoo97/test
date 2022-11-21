@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import {useNavigation} from '@react-navigation/native';
+import Grid from '../../assets/Grid.svg';
 
 
 const MainCenter = ({}) => {
@@ -11,7 +12,9 @@ const MainCenter = ({}) => {
     <>
       <View style={styles.container}>
         <View style={styles.headerLeft}>
-          <Image source={require('../../assets/cate.png')} />
+          {/* <Image source={require('../../assets/cate.png')} /> */}
+          <Grid />
+
           <Text style={styles.title1}>Shop By Top{"\n"}<Text style={styles.title2}>Categories</Text></Text>
         </View>
         <View >

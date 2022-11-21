@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import {useNavigation} from '@react-navigation/native';
+import Deal from '../../assets/Deal.svg';
 
 
 const MainCenter9 = ({}) => {
@@ -11,7 +12,8 @@ const MainCenter9 = ({}) => {
     <>
       <View style={styles.container}>
         <View style={styles.headerLeft}>
-          <Image source={require('../../assets/Offers.png')} />
+          {/* <Image source={require('../../assets/Offers.png')} /> */}
+          <Deal />
           <Text style={styles.title1}>Shop By Top{"\n"}<Text style={styles.title2}>Hot Offers</Text></Text>
         </View>
         <View >

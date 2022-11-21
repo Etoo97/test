@@ -2,13 +2,15 @@ import React from 'react';
 import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import Bundles from '../../assets/Bundles.svg'
 
 const MainCenter8 = ({ }) => {
   return (
     <>
       <View style={styles.container}>
         <View style={styles.headerLeft}>
-          <Image source={require('../../assets/bundles.png')} />
+          {/* <Image source={require('../../assets/bundles.png')} /> */}
+          <Bundles />
           <Text style={styles.title1}>Shop By Top{"\n"}<Text style={styles.title2}>Bundles Offers</Text></Text>
         </View>
         <View >

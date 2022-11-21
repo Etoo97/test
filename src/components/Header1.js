@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
+import Deals from '../../assets/Deals.svg'
 
 const Header1= () => {
     return (
         <View style={styles.container}>
             <View style={styles.headerLeft}>
-                <Image source={require('../../assets/deas.png')} />
+                {/* <Image source={require('../../assets/deas.png')} /> */}
+                <Deals />
                 <Text style={styles.title1}>Shop By Top{"\n"}<Text style={styles.title2}>Deals</Text></Text>
             </View>
         </View>

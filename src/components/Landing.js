@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 import { Card } from 'react-native-shadow-cards'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import Koki from '../../assets/Koki.svg';
 
 const Landing = () => {
     return (
@@ -9,7 +10,7 @@ const Landing = () => {
             <Card style={styles.titleBox1}>
                 <Text style={styles.title1}>20% <Text style={{ fontSize: hp('1.5%')}}>off</Text></Text>
             </Card>
-            <Image source={require('../../assets/KOKII.png')} style={styles.foodItem} />
+            <Koki style={styles.foodItem} />
             <View>
             <Image source={require('../../assets/Rectangle7.png')} />
             </View>

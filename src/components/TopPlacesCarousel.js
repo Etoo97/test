@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import { colors, shadow, sizes, spacing } from '../constants/theme';
 import FavoriteButton from './FavoriteButton';
+
 import LinearGradient from 'react-native-linear-gradient';
 import KH from '../../assets/KH.svg'
 
@@ -28,34 +29,38 @@ const TopPlacesCarousel = ({ list }) => {
       renderItem={({ item, index }) => {
         return (
           <TouchableOpacity
-            style={{
+            style={[
+              styles.card,
+              {
               marginLeft: spacing.m,
               marginRight: index === list.length - 1 ? spacing.l : 0,
-            }}>
-            <View style={styles.card}>
+              }
+            ]}>
+          
+              <View>
 
-              {/* <FavoriteButton style={styles.favorite} /> */}
-              <View >
-                <LinearGradient 
-                 start={{x:0.6, y: 0.0}}
-                 end={{x: 1, y: 0.0}} 
-              // locations={[0,0.5,0.6]}
-                 colors={['rgba(16, 10, 31, 0.8)','rgba(16, 10, 31, 0.2)']}
-                 style={styles.LinearGradient}> 
+                {/* <FavoriteButton style={styles.favorite} /> */}
+                <View >
+                  <LinearGradient
+                    start={{ x: 0.6, y: 0.0 }}
+                    end={{ x: 1, y: 0.0 }}
+                    // locations={[0,0.5,0.6]}
+                    colors={['rgba(16, 10, 31, 0.8)', 'rgba(16, 10, 31, 0.2)']}
+                    style={styles.LinearGradient}>
 
-                </LinearGradient>
-                <Image source={item.image} />
-              </View>
-              <View style={styles.titleBox1}>
-                <Text style={styles.title1}>49% <Text style={{ fontSize: 10 }}>off</Text></Text>
-              </View>
-              <KH style={{ position: 'absolute', left: 15, top: 15, width: 35, height: 17, zIndex: 2 }} />
-              <View style={styles.titleBox}>
-                <Text style={styles.title}>{item.title}</Text>
-                <Text style={styles.location}>{item.location} <Text style={{ fontFamily: 'Lato-Bold', color: '#FF193B', fontSize: sizes.h2, }}>49%</Text></Text>
-              </View>
+                  </LinearGradient>
+                  <Image source={item.image} />
+                </View>
+                <View style={styles.titleBox1}>
+                  <Text style={styles.title1}>49% <Text style={{ fontSize: 10 }}>off</Text></Text>
+                </View>
+                <KH style={{ position: 'absolute', left: 15, top: 15, width: 35, height: 17, zIndex: 2 }} />
+                <View style={styles.titleBox}>
+                  <Text style={styles.title}>{item.title}</Text>
+                  <Text style={styles.location}>{item.location} <Text style={{ fontFamily: 'Lato-Bold', color: '#FF193B', fontSize: sizes.h2, }}>49%</Text></Text>
+                </View>
 
-            </View>
+              </View>
 
           </TouchableOpacity>
         );
@@ -67,18 +72,18 @@ const TopPlacesCarousel = ({ list }) => {
 const styles = StyleSheet.create({
   LinearGradient: {
 
-    position: "absolute", 
-    width: "100%", 
-    height: "100%", 
-     top: 0, 
-     left: 0, 
-     zIndex: 1,
+    position: "absolute",
+    width: "100%",
+    height: "100%",
+    top: 0,
+    left: 0,
+    zIndex: 1,
 
   },
   card: {
     // marginVertical: 10,
-    marginBottom:9,
-    marginTop:24,
+    marginBottom: 9,
+    marginTop: 24,
     position: "relative",
     overflow: 'hidden',
     borderRadius: 16,
@@ -90,7 +95,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.16,
     shadowRadius: 10,
     elevation: 9,
-    
+
   },
   favorite: {
     alignItems: 'flex-start',
@@ -108,7 +113,7 @@ const styles = StyleSheet.create({
     height: 22,
     width: 52,
     zIndex: 2,
-    
+
 
   },
 
